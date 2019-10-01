@@ -11,7 +11,7 @@ To run this App you need to install:
 - RStudio,
 - Librarys: ineq, shiny.
 
-## Installing librarys
+## Installing libraries
 In RStudio:
 1. Go to Packages -> Install 
 2. Type: ineq
