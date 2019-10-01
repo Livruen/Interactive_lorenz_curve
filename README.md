@@ -13,8 +13,9 @@ To run this App you need to install:
 
 ## Installing libraries
 In RStudio:
-1. Go to Packages -> Install 
-2. Type: ineq
-3. Click the Install button.
+1. Go to Packages 
+2. -> Install 
+3. Type: ineq 
+ and Click the Install button.
 
 ![Picture of Applikation](https://user-images.githubusercontent.com/5526910/65965220-9044d680-e45e-11e9-9502-ed4f7cab5338.png)
