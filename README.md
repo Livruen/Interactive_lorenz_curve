@@ -6,16 +6,23 @@ The user can enter a vector with numbers from which a lorenz curve is generated.
 
 ## Run the App
 
-To run this App you need to install:
+Before runing this App you need to install:
 - R, 
 - RStudio,
-- Librarys: ineq, shiny.
+- librarys: ineq, shiny.
 
-## Installing libraries
+### Installing libraries
 In RStudio:
 1. Go to Packages 
 2. -> Install 
 3. Type: ineq 
  and Click the Install button.
+
+![Picture of Applikation](https://user-images.githubusercontent.com/5526910/65965220-9044d680-e45e-11e9-9502-ed4f7cab5338.png)
+
+### Running Interactive lorenz curve
+
+1. Double click on Interactive_lorenz_curve.Rproj  [the blue CUBE]
+2. Click the Run App button
 
 ![Picture of Applikation](https://user-images.githubusercontent.com/5526910/65965220-9044d680-e45e-11e9-9502-ed4f7cab5338.png)
