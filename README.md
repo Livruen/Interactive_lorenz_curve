@@ -31,4 +31,9 @@ In RStudio:
 
 ![Picture of Applikation](https://user-images.githubusercontent.com/5526910/65966140-fd0ca080-e45f-11e9-986e-bde1b01afae7.png)
 
+## License
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)\
+The application code is licensed under the GNU General Public License v3.0.\
+The license text can be found in the LICENSE file.\
 
