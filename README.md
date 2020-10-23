@@ -1,4 +1,4 @@
-# Interactive_lorenz_curve
+# Interactive_lorenz_curve [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)\
 
 The user can enter a vector with numbers from which a lorenz curve is generated. The output changes dynamically according to the input.
 
