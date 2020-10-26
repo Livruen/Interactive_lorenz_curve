@@ -1,6 +1,8 @@
 # Interactive_lorenz_curve [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)\
 
-The user can enter a vector with numbers from which a lorenz curve is generated. The output changes dynamically according to the input.
+The user can enter a vector with numbers from which a lorenz curve is generated (Radio button -> Custom).
+The lorenz curve changes dynamically according to the input, choose from many example distributions (normal, unif, left shift).
+In addition, a histogram and a boxplot for the respective distributions are displayed.
 
 ![Picture of Applikation](https://user-images.githubusercontent.com/5526910/65230704-9f2aa100-dace-11e9-86e3-b55a98b1f77f.png)
 
