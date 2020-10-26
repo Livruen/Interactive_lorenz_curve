@@ -60,7 +60,6 @@ function(input, output) {
     output$lorenzPlot <- renderPlot(plot(Lc(inputData), col="blue",lwd=2))
     output$lorenzTable <- renderTable(data.frame( "L(p)"=Lc(inputData)$L, "p"=Lc(inputData)$p,check.names = FALSE))
     output$distributionPlot <- renderPlot(hist(inputData,breaks = 100))
-    output$result <- renderText(print(sd(inputData)))
     output$boxplot <- renderPlot(boxplot(inputData,horizontal = TRUE))
 
   })

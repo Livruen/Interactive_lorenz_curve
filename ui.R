@@ -32,8 +32,29 @@
 ######################################
 
 fluidPage(    
-    column(12,
-           fluidRow( style="background-color: #f5f5f5;
+  headerPanel("Interactive lorenz curve"),
+           fluidRow(
+             column(2,
+                    style="background-color: #f5f5f5;
+                            border: 1px solid #e3e3e3;
+                            border-radius: 4px;
+                            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                            box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                            margin-top:2%; 
+                            margin-left:2%,
+                            padding: 1% 1%",
+                    radioButtons("radio.btn", 
+                                 label = h3("Choose distribution"), 
+                                 choices = list("Normal" = 1, 
+                                                "Unif" = 2,
+                                                "Perfekt unif" = 3, 
+                                                "Left shift" = 4,
+                                                "Custom" = 5),
+                                 selected = 4)
+             ),
+             
+             column(10,
+                    style="background-color: #f5f5f5;
                             border: 1px solid #e3e3e3;
                             border-radius: 4px;
                             -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
@@ -41,30 +62,30 @@ fluidPage(
                             margin-top:2%; 
                             margin-bottom:2%;
                             padding: 1% 1%",
-             textInput("inputAttr1", "Define a vector and separate the numbers with a comma ','."
-                       ,value = 1,width = '100%'),
-             helpText("L(p) - Proportion of the attribute e.g. income"),
-             helpText("p - Proportion of the population")
-        
-           )
-           ,
-           fluidRow(column(6,  radioButtons("radio.btn", label = h3("Choose distribution"), 
-                                            choices = list("Normal" = 1, "Unif" = 2,"Perfekt unif" =3, "Left shift" = 4,"Custom" = 5),
-                                            selected = 4)
-                           ),
-                    column(6,  textOutput("result")
-                           )
-           
+                    textInput("inputAttr1", "Define a vector and separate the numbers with a comma ','."
+                              ,value = 1
+                              ,width = '100%')
+             )
            ),
+
            sidebarPanel(
-             div(style = 'overflow-y: scroll; overflow-x: scroll; height:595px;',tableOutput("lorenzTable")) 
+             helpText("L(p) - Proportion of the attribute e.g. income"),
+             helpText("p - Proportion of the population"),
+             div(style = 'overflow-y: scroll; overflow-x: scroll; height:595px;'
+                 ,tags$hr()
+                 ,tableOutput("lorenzTable")
+                 ) 
              
            ),
            mainPanel(
-             plotOutput("lorenzPlot") ,
-             plotOutput("distributionPlot"),
-             plotOutput("boxplot")
-           )
+             column(6, 
+                    
+                    
+                    plotOutput("lorenzPlot") ,
+                    plotOutput("boxplot")
+                    ),
+             column(6,
+                    plotOutput("distributionPlot"))
            )
 )
 
