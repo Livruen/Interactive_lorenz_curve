@@ -4,7 +4,7 @@ The user can enter a vector with numbers from which a lorenz curve is generated 
 The lorenz curve changes dynamically according to the input, choose from many example distributions (normal, unif, left shift).
 In addition, a histogram and a boxplot for the respective distributions are displayed.
 
-![Picture of Applikation](https://user-images.githubusercontent.com/5526910/65230704-9f2aa100-dace-11e9-86e3-b55a98b1f77f.png)
+![Picture of Applikation](https://user-images.githubusercontent.com/5526910/97197349-d6798000-17ad-11eb-9130-d1e91501af16.png)
 
 ## Run the App
 
